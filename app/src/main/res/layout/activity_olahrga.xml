@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OlahrgaActivity"
+    android:background="@color/bluesky"
+    >
+
+    <TextView
+        android:id="@+id/JudulMakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/bold"
+        android:text="Pilih Olahraga"
+        android:textSize="40dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="408dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            >
+
+            <jrizani.jrspinner.JRSpinner
+                android:id="@+id/Solahraga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:singleLine="false"
+                android:hint="Pilih Olahraga"
+                android:textColor="@color/bluesky"
+                app:backgroundTint="@color/bluesky"
+                app:jrs_icon_tint="@color/bluesky"
+                app:jrs_multiple="false"
+                app:jrs_title="Rekomendasi Olahraga"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/tess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:inputType="number"
+            android:paddingTop="20dp"
+            android:text="Waktu"
+            android:textSize="20dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Time"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:hint="Menit"
+                android:inputType="number"
+                android:fontFamily="@font/regular"
+                />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+
+                android:paddingTop="20dp"
+                android:text="Kkal terbakar"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Reccomendation OFF"
+        android:fontFamily="@font/regular"
+        android:id="@+id/OlhOnOFF"
+        />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/RecActivity"
+        android:layout_width="411dp"
+        android:layout_height="284dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="133dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:fontFamily="@font/bold"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <com.alexfu.countdownview.CountDownView
+            android:id="@+id/CD"
+            android:layout_marginLeft="102sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/bold"
+            android:textSize="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            >
+
+        </com.alexfu.countdownview.CountDownView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:background="@color/green" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bold"
+            android:text="Cal Got burn"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/kkalBurn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/bold"
+            android:textAlignment="center"
+            android:textSize="40dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/StartActiv"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50sp"
+            android:background="@drawable/w_btn_ui"
+            android:text="Start"
+            android:textColor="@color/bluesky"/>
+        <Button
+            android:id="@+id/PauseActiv"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50sp"
+            android:background="@drawable/w_btn_ui"
+            android:text="STOP"
+            android:textColor="@color/bluesky"
+            android:enabled="false"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SaveOlngraga"
+        android:layout_width="289dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/w_btn_ui"
+        android:text="Simpan OlahRaga"
+        android:textColor="@color/bluesky"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

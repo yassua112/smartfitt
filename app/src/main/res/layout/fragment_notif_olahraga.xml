@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmen.notivMakanan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:paddingTop="200dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification Olahraga Pagi"
+                android:fontFamily="@font/bold"
+                android:textSize="15sp"
+                />
+
+            <Switch
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/SWOlpagi"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="07.00 AM"
+                android:id="@+id/txSWpgi"
+                android:fontFamily="@font/bold"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/olhOraoff"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="OFF"
+            android:fontFamily="@font/bold"
+            android:textSize="20sp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification Olahraga Malam"
+                android:fontFamily="@font/bold"
+                android:textSize="13sp"
+                />
+
+            <Switch
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/SWOlSelsi"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="17.30 PM"
+                android:fontFamily="@font/bold"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/onOffOlhmlm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="ON"
+            android:fontFamily="@font/bold"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+</FrameLayout>

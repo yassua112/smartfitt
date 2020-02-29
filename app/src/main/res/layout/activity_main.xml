@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinierID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluesky"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/transparent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="65dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/bold"
+                    android:paddingTop="15dp"
+
+                    android:text="Home"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/idJadwal"
+                    android:layout_width="65dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/bold"
+                    android:paddingTop="15dp"
+                    android:text="Jadwal"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/history"
+                    android:layout_width="65dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/bold"
+                    android:paddingTop="15dp"
+                    android:text="History"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+
+                    />
+
+                <TextView
+
+                    android:id="@+id/LogoutBtn"
+                    android:layout_width="65dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/bold"
+                    android:paddingTop="15dp"
+                    android:text="Logout"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Profile"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="120dp"
+            android:clickable="true"
+            android:paddingTop="150dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="102dp"
+                    android:layout_height="93dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginBottom="58dp"
+                    android:background="@drawable/w_btn_ui"
+                    android:padding="10dp"
+                    android:src="@mipmap/icn_ui" />
+
+                <TextView
+                    android:id="@+id/pname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="137dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Nama : "
+                    android:textSize="25dp"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="59dp"
+                    android:background="@color/green" />
+
+                <TextView
+                    android:id="@+id/TxStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="89dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="5dp"
+                    android:text="Text"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/KetStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="5dp"
+                    android:text="Status Gizi Anda :"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/kkal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/bold"
+                    android:text="0"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/makanan"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/olahraga"
+            android:clickable="true"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="43dp"
+                    android:layout_marginEnd="247dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="25dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/mMakanan"
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="51dp"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="MENU MAKANAN"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="109dp"
+                    android:layout_marginEnd="58dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginEnd="58dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="61dp"
+                    android:layout_marginEnd="58dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginEnd="58dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/olahraga"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/stepCount"
+            android:clickable="true"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="131dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="43dp"
+                    android:layout_marginEnd="246dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="25dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/MenuMakan"
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="47dp"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="OLAHRAGA"
+                    android:textSize="30dp"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="79dp"
+                    android:layout_marginEnd="36dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stepCount"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/Profile"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="131dp">
+
+                <TextView
+                    android:id="@+id/Steps"
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="97dp"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="Jumlah Langkah Harian"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3Step"
+                    android:layout_width="354dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="54dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="Jumlah Step" />
+
+                <TextView
+                    android:id="@+id/textView4Kalori"
+                    android:layout_width="58dp"
+                    android:layout_height="49dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="47dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="Kallori" />
+
+                <TextView
+                    android:id="@+id/textView5jarak"
+                    android:layout_width="48dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="46dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="Jarak" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

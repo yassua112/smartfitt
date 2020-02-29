@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">SmartFitness</string>
+    <string name="login_string">Login</string>
+
+
+    <string-array name="activity">
+        <item>Kategori Aktivitas anda</item>
+        <item>Istirahat</item>
+        <item>Ringan Sekali</item>
+        <item>Ringan</item>
+        <item>Ringan-sedang</item>
+        <item>Berat</item>
+        <item>Berat Sekalii</item>
+    </string-array>
+
+
+    <string-array name="MenuMakan">
+        <item>Pilih Menu Anda</item>
+        <item>Rekom Menu</item>
+        <item>Menu 1</item>
+        <item>Menu 2</item>
+        <item>Menu 3</item>
+        <item>Menu 4 </item>
+        <item>Menu 5</item>
+    </string-array>
+
+
+    <string-array name="JenisOlahraga">
+        <item>Pilih Olahraga Anda</item>
+        <item>Rekom Olahraga</item>
+        <item>Lari</item>
+        <item>Berenang</item>
+        <item>Bulutangkis</item>
+        <item>Golf</item>
+        <item>Basket</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="msg_token_fmt">getToken</string>
+
+
+</resources>
+
